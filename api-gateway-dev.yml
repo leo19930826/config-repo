@@ -4,8 +4,8 @@ zuul:
   routes:
     client: /client/**
   #排除某些路由
-  #ignored-patterns:
-   # - /**/ignoremsg 
+  ignored-patterns:
+    - /**/getServerMsg 
 management:
   security:
     enabled: false        
