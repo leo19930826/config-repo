@@ -2,10 +2,10 @@ zuul:
   #全部服务忽略敏感头(全部服务都可以传递cookie)
   sensitive-headers: 
   routes:
-    myserver: /myserver/**
+    client: /client/**
   #排除某些路由
-  ignored-patterns:
-    - /**/ignoremsg 
+  #ignored-patterns:
+   # - /**/ignoremsg 
 management:
   security:
     enabled: false        
